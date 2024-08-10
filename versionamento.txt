@@ -1,0 +1,5 @@
+09/08/24
+Estudando sass
+montando o html
+baixando as imagens dos figma
+montando diretório do projeto
