@@ -1,0 +1,45 @@
+.banner {
+    gap: 40px;
+
+    article {
+        flex: 1;
+        margin: 180px 0;
+
+        .fs-50 {
+            font-weight: 500;
+            line-height: 70px;
+            margin-bottom: 20px;
+    
+            strong {
+                font-weight: 700;
+            }
+        }
+    
+        .fs-16 {
+            line-height: 30px;
+
+            strong {
+                font-weight: 500;
+            }
+        }
+        .botao {
+            margin-top: 50px;
+
+            &::before {
+                content: url(../../assets/images/section1/sombra.png);
+                position: absolute;
+                top: -50%;
+                left: -15%;
+                z-index: - 1;
+            }
+        }
+    }
+
+    figure {
+        flex: 1;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

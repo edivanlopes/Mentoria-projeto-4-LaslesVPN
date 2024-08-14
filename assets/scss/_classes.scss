@@ -1,0 +1,35 @@
+.container {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.botao {
+    background-color: $cor-hover-btn;
+    color: $white;
+    padding: 18px 78px;
+    font-weight: 700;
+    border-radius: 10px;
+    position: relative;
+}
+
+section {
+    margin: 100px 0;
+}
+
+
