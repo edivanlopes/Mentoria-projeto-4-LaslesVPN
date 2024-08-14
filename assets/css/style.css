@@ -1,7 +1,151 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Lines&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-body {
-  font-family: "Rubik Lines", system-ui;
-  background-color: #F53838;
+.font-1 {
+  font-family: "Rubik", sans-serif;
 }
 
-/*# sourceMappingURL=style.css.map */
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-25 {
+  font-size: 25px;
+}
+
+.fs-35 {
+  font-size: 35px;
+}
+
+.fs-50 {
+  font-size: 50px;
+}
+
+.container {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.botao {
+  background-color: #F53838;
+  color: #ffffff;
+  padding: 18px 78px;
+  font-weight: 700;
+  border-radius: 10px;
+  position: relative;
+}
+
+section {
+  margin: 100px 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 99;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header nav {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .fs-16 {
+  padding: 20px 25px;
+  color: #4F5665;
+  transition: all 0.2s;
+}
+header nav .fs-16:hover {
+  background-color: rgba(79, 86, 101, 0.31);
+  color: white;
+  border-radius: 3px;
+}
+header nav .login {
+  padding: 13px 45px;
+  color: #0B132A;
+  font-weight: 500;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+header nav .login:hover {
+  color: #F53838;
+  border: 1px solid #F53838;
+  border-radius: 50px;
+}
+
+.banner {
+  gap: 40px;
+}
+.banner article {
+  flex: 1;
+  margin: 180px 0;
+}
+.banner article .fs-50 {
+  font-weight: 500;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+.banner article .fs-50 strong {
+  font-weight: 700;
+}
+.banner article .fs-16 {
+  line-height: 30px;
+}
+.banner article .fs-16 strong {
+  font-weight: 500;
+}
+.banner article .botao {
+  margin-top: 50px;
+}
+.banner article .botao::before {
+  content: url(../../assets/images/section1/sombra.png);
+  position: absolute;
+  top: -50%;
+  left: -15%;
+  z-index: -1;
+}
+.banner figure {
+  flex: 1;
+}
+.banner figure img {
+  max-width: 100%;
+}
+
+.numeros {
+  padding: 67px 90px;
+  position: relative;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.1) 0px 50px 100px -20px, rgba(0, 0, 0, 0.1) 0px 30px 60px -30px;
+}
+.numeros .flex {
+  gap: 37px;
+}
+.numeros .flex span {
+  font-weight: 700;
+  line-height: 30px;
+  color: #0B132A;
+}
+.numeros .flex p {
+  line-height: 30px;
+  color: #4F5665;
+  margin-top: 5px;
+}/*# sourceMappingURL=style.css.map */
