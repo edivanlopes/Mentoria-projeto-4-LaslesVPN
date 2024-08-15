@@ -7,11 +7,12 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     
     nav {
-        padding: 25px 0;
+        padding: 20px 0;
         
         .fs-16 {
-            padding: 37px 25px;
+            padding: 30px 25px;
             transition: all .2s;
+            color: $cor-texto;
 
             &:hover {
                 background-color: $cor-link-hover;
