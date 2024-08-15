@@ -1,0 +1,41 @@
+footer {
+    background-color: $cor-footer;
+    padding: 180px 0 100px 0;
+
+    article {
+        align-items: flex-start;      
+
+        .redes-sociais {
+            flex: 2;
+    
+            .texto {
+                margin: 20px 0 30px ;
+    
+                strong {
+                    font-weight: 500;
+                }
+            }
+    
+            .mr {
+                color: $cor-mr;
+    
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+
+        nav {
+            flex: 1;
+            a {
+                font-size: 16px;
+                color: $cor-texto;
+            }
+
+        }
+    
+        
+
+    }
+    
+}

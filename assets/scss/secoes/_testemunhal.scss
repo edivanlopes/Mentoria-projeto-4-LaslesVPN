@@ -1,0 +1,52 @@
+.testemunhal {
+    margin-bottom: 300px;
+    article {
+        text-align: center;
+
+        .subtitulo {
+            padding: 50px 375px 0px 375px;
+        }
+
+        .texto {
+            padding: 20px 340px 155px 340px;
+        }
+    }
+
+    .cards-scrool {
+        gap: 50px;
+        align-items: stretch;
+        overflow: auto;
+        padding-bottom: 20px;
+
+        .testemunhal-card {
+            border: 2px solid $cor-borda;
+            border-radius: 10px;
+            transition: all .3s;
+            flex: 1;
+            padding: 30px;
+            text-align: left;
+            width: 400px;
+            min-width: 400px;
+            height: 230px;
+    
+            &:hover {
+                border-color: $cor-hover-btn;
+            }
+
+            .card-titulo {
+                .flex {
+                    gap: 20px
+                }
+                .nota::after {
+                    content: url(../../assets/images/section6/estrela.png);
+                    padding-left: 8px;
+                }
+            }
+
+            .fs-16 {
+                color: $cor-titulo;
+                margin-top: 10px;
+            }
+        }
+    }  
+}
