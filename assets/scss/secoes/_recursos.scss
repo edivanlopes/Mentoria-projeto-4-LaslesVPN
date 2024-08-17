@@ -1,0 +1,27 @@
+.recursos {
+    gap: 170px;
+    margin: 50px auto 120px auto;
+    align-items: flex-end;
+    
+    figure {
+        flex: 1;
+    }
+
+    article {
+        flex: 1;
+        padding: 0 85px;
+
+        .fs-16 {
+            padding: 20px 0;
+        }
+
+        .fs-14 {
+            
+            .flex {
+                justify-content: flex-start;
+                gap: 10px;
+                margin-top: 12px;
+            }
+        }
+    }
+}

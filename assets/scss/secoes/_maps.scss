@@ -3,14 +3,19 @@
         text-align: center;
 
         .fs-35 {
-            padding: 50px 375px 0px 375px;
+            padding: 70px 410px 0px 410px;
         }
 
         .fs-16 {
             padding: 20px 340px 155px 340px;
         }
-            strong {
+
+        strong {
         font-weight: 500;
+        }
+
+        img {
+            width: 100%;
         }
     }
 
@@ -21,5 +26,4 @@
     .flex {
         margin: 50px 0;
     }
-   
 }

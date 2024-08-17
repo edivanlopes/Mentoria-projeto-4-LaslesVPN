@@ -1,21 +1,25 @@
 .numeros {
-    padding: 67px 90px;
-    position: relative;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.1) 0px 50px 100px -20px, rgba(0, 0, 0, 0.1) 0px 30px 60px -30px;
-
-    .flex {
+    padding: 37px 30px;
+   
+    .numeros-item {
         gap: 37px;
+        width: 100%;
+        padding: 30px;
+        justify-content: center;
+        transition: all .3s;
 
-        span {
-            color: $cor-titulo;
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: 0px 12px 50px 3px rgba(204, 204, 204, 0.1411764706);
         }
+    
+            span {
+                color: $cor-titulo;
+            }
 
-        p {
-            margin-top: 5px;
-        } 
-
+        &:nth-child(3n + 2) {
+            border-left: 2px solid $cor-borda-numeros;
+            border-right: 2px solid $cor-borda-numeros;
+        }   
     }
-
-       
-
 }

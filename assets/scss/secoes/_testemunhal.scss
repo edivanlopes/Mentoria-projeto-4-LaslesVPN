@@ -1,5 +1,6 @@
 .testemunhal {
-    margin-bottom: 300px;
+    padding-bottom: 135px;
+    
     article {
         text-align: center;
 
@@ -8,7 +9,7 @@
         }
 
         .texto {
-            padding: 20px 340px 155px 340px;
+            padding: 20px 340px 60px 340px;
         }
     }
 
@@ -35,7 +36,11 @@
 
             .card-titulo {
                 .flex {
-                    gap: 20px
+                    gap: 20px;
+
+                    .fs-14 { 
+                        line-height: 23px;
+                    }
                 }
                 .nota::after {
                     content: url(../../assets/images/section6/estrela.png);

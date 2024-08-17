@@ -7,6 +7,24 @@ body {
     font-family: $font-1;
     line-height: 30px;
     color: $cor-texto;
+    scroll-behavior: smooth;
+}
+
+// * {
+//     &::-webkit-scrollbar {
+//         background-color: #f5383821;
+//         width: 15px;
+//         height: 15px;
+//         border-radius: 50px;
+//     }
+//     &::-webkit-scrollbar-thumb {
+//         background-color: $cor-hover-btn;
+//         border-radius: 50px;
+//     }
+// }
+
+.box-shadow {
+    box-shadow: 1px 14px 20px #0000000f;
 }
 
 .flex {
@@ -20,16 +38,7 @@ body {
     flex-direction: column;
 }
 
-.botao {
-    background-color: $cor-hover-btn;
-    color: $white;
-    padding: 18px 78px;
-    font-weight: 700;
-    border-radius: 10px;
-    position: relative;
-}
-
-.botao-cards {
+.botao-p {
     background-color: $white;
     color: $cor-hover-btn;
     padding: 13px 63px;
@@ -37,21 +46,30 @@ body {
     border: 2px solid $cor-hover-btn;
     border-radius: 50px;
     font-size: 16px;
-    transition: all .3s; 
-    position: relative; 
+    transition: all .2s ease-in-out; 
     
-    &:hover {
-        background-color: $cor-hover-btn;
-        color: $white;
-
-        &::before {
-            content: url(../../assets/images/section4/sombra.png);
-            position: absolute;
-            top: -100%;
-            left: -15%;
-
-        }
+    &:active {
+        transform: translateY(2px);
     }
 }
 
+.botao-efeito:hover {
+        background-color: $cor-hover-btn;
+        box-shadow: 0px 14px 52px rgba(244, 59, 61, 0.4);
+        color: $white;
+        transition: all .2s ease-in-out; 
+}
 
+.botao-g {
+    padding: 17px 78px;
+    font-weight: 700;
+    border: 1px solid $cor-hover-btn;
+    color: $cor-hover-btn;
+    border-radius: 10px;
+    line-height: 25px;
+    transition: all .2s ease-in-out;
+
+    &:active {
+        transform: translateY(2px);
+    }
+}

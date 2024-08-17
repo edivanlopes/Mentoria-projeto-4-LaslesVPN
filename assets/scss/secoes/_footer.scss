@@ -2,8 +2,7 @@ footer {
     background-color: $cor-footer;
     padding: 180px 0 100px 0;
 
-    article {
-        align-items: flex-start;      
+    article {  
 
         .redes-sociais {
             flex: 2;
@@ -27,15 +26,19 @@ footer {
 
         nav {
             flex: 1;
+
+            .fs-18 {
+                margin-bottom: 20px;
+            }
             a {
                 font-size: 16px;
                 color: $cor-texto;
+                padding: 10px 0;
             }
-
         }
-    
-        
+    } 
 
+    .flex {
+        align-items: flex-start
     }
-    
 }

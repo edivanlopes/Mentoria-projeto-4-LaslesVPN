@@ -1,10 +1,10 @@
 .banner {
     gap: 40px;
+    padding: 200px 0 100px 0;
 
     article {
         flex: 1;
-        margin: 200px 0 100px 0;
-
+        
         .fs-50 {
             margin-bottom: 20px;
     
@@ -13,8 +13,9 @@
             }
         }
     
-        .fs-16 {
+        .texto {
             line-height: 30px;
+            padding-bottom: 50px;
 
             strong {
                 font-weight: 500;
@@ -22,14 +23,6 @@
         }
         .botao {
             margin-top: 50px;
-
-            &::before {
-                content: url(../../assets/images/section1/sombra.png);
-                position: absolute;
-                top: -50%;
-                left: -15%;
-                z-index: - 1;
-            }
         }
     }
 

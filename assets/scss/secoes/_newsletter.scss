@@ -1,16 +1,23 @@
-.newsletter {
-    width: 1140px;
-    background-color: green;
-    margin: 0 auto;
-    padding: 58px 70px;
-    border-radius: 10px;
-    position: relative;
+main {
 
-    article {
-        padding-right: 10;
-    }
+    .newsletter {
+        background-color: $white;
+        padding: 60px 70px;
+        border-radius: 10px;
+        position: relative;
+        margin-bottom: -120px;
 
-    button {
-        padding: 18px 65px;
+        .fs-35 {
+            line-height: 45px;
+        }
+
+        button {
+            padding: 18px 65px;
+            
+            &::before {
+                top: -70%;
+                z-index: +1;
+            }
+        }
     }
 }

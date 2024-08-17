@@ -4,10 +4,10 @@ header {
     width: 100%;
     background-color: $white;
     z-index: 99;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 8px 20px 0px rgb(0 0 0 / 6%);
     
     nav {
-        padding: 20px 0;
+        padding: 25px 0;
         
         .fs-16 {
             padding: 30px 25px;
@@ -15,56 +15,21 @@ header {
             color: $cor-texto;
 
             &:hover {
-                background-color: $cor-link-hover;
-                color: white;
-                border-radius: 3px;
+                color: $cor-hover-btn;
             }
         }
 
-        .login {
+        .sign-in {
             padding: 13px 45px;
             font-weight: 500;
-            transition: all .2s;
-            border: 1px solid transparent;
+            color: $cor-titulo;
+            border-radius: 50px;
+        }
 
-            &:hover {
-                color: $cor-hover-btn;
-                border: 1px solid $cor-hover-btn;
-                border-radius: 50px;
-            }
+        .botao-p {
+            padding: 13px 45px;
+            font-weight: 500;
+            border: 1px solid $cor-hover-btn;
         }
     }
-
 }
-
-
-
-// header {
-//     background-color: yellow;
-//     nav {
-//         background-color: blue;
-//         @include flex (flex-start, space-between, row);
-//         a {
-//             color: $cor;
-
-//             &.teste {
-//                 color: yellow;
-                
-//                 &:hover {
-//                     color: #fff;
-//                 }
-//             }
-//         }
-//     }
-//     @include mobile {
-//         nav {
-//             background-color: gray;
-//         }
-//     }
-
-//     @include tablet {
-//         nav {
-//             background-color: red;
-//         }
-//     }
-// }
