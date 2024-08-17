@@ -44,6 +44,11 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 30px;
   color: #4F5665;
+  scroll-behavior: smooth;
+}
+
+.box-shadow {
+  box-shadow: 1px 14px 20px rgba(0, 0, 0, 0.0588235294);
 }
 
 .flex {
@@ -57,16 +62,7 @@ body {
   flex-direction: column;
 }
 
-.botao {
-  background-color: #F53838;
-  color: #ffffff;
-  padding: 18px 78px;
-  font-weight: 700;
-  border-radius: 10px;
-  position: relative;
-}
-
-.botao-cards {
+.botao-p {
   background-color: #ffffff;
   color: #F53838;
   padding: 13px 63px;
@@ -74,18 +70,30 @@ body {
   border: 2px solid #F53838;
   border-radius: 50px;
   font-size: 16px;
-  transition: all 0.3s;
-  position: relative;
+  transition: all 0.2s ease-in-out;
 }
-.botao-cards:hover {
+.botao-p:active {
+  transform: translateY(2px);
+}
+
+.botao-efeito:hover {
   background-color: #F53838;
+  box-shadow: 0px 14px 52px rgba(244, 59, 61, 0.4);
   color: #ffffff;
+  transition: all 0.2s ease-in-out;
 }
-.botao-cards:hover::before {
-  content: url(../../assets/images/section4/sombra.png);
-  position: absolute;
-  top: -100%;
-  left: -15%;
+
+.botao-g {
+  padding: 17px 78px;
+  font-weight: 700;
+  border: 1px solid #F53838;
+  color: #F53838;
+  border-radius: 10px;
+  line-height: 25px;
+  transition: all 0.2s ease-in-out;
+}
+.botao-g:active {
+  transform: translateY(2px);
 }
 
 header {
@@ -94,38 +102,37 @@ header {
   width: 100%;
   background-color: #ffffff;
   z-index: 99;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 8px 20px 0px rgba(0, 0, 0, 0.06);
 }
 header nav {
   padding: 25px 0;
 }
 header nav .fs-16 {
-  padding: 37px 25px;
+  padding: 30px 25px;
   transition: all 0.2s;
+  color: #4F5665;
 }
 header nav .fs-16:hover {
-  background-color: rgba(79, 86, 101, 0.31);
-  color: white;
-  border-radius: 3px;
+  color: #F53838;
 }
-header nav .login {
+header nav .sign-in {
   padding: 13px 45px;
   font-weight: 500;
-  transition: all 0.2s;
-  border: 1px solid transparent;
-}
-header nav .login:hover {
-  color: #F53838;
-  border: 1px solid #F53838;
+  color: #0B132A;
   border-radius: 50px;
+}
+header nav .botao-p {
+  padding: 13px 45px;
+  font-weight: 500;
+  border: 1px solid #F53838;
 }
 
 .banner {
   gap: 40px;
+  padding: 200px 0 100px 0;
 }
 .banner article {
   flex: 1;
-  margin: 180px 0;
 }
 .banner article .fs-50 {
   margin-bottom: 20px;
@@ -133,21 +140,15 @@ header nav .login:hover {
 .banner article .fs-50 strong {
   font-weight: 700;
 }
-.banner article .fs-16 {
+.banner article .texto {
   line-height: 30px;
+  padding-bottom: 50px;
 }
-.banner article .fs-16 strong {
+.banner article .texto strong {
   font-weight: 500;
 }
 .banner article .botao {
   margin-top: 50px;
-}
-.banner article .botao::before {
-  content: url(../../assets/images/section1/sombra.png);
-  position: absolute;
-  top: -50%;
-  left: -15%;
-  z-index: -1;
 }
 .banner figure {
   flex: 1;
@@ -157,91 +158,106 @@ header nav .login:hover {
 }
 
 .numeros {
-  padding: 67px 90px;
-  position: relative;
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.1) 0px 50px 100px -20px, rgba(0, 0, 0, 0.1) 0px 30px 60px -30px;
+  padding: 37px 30px;
 }
-.numeros .flex {
+.numeros .numeros-item {
   gap: 37px;
+  width: 100%;
+  padding: 30px;
+  justify-content: center;
+  transition: all 0.3s;
 }
-.numeros .flex span {
+.numeros .numeros-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 12px 50px 3px rgba(204, 204, 204, 0.1411764706);
+}
+.numeros .numeros-item span {
   color: #0B132A;
 }
-.numeros .flex p {
-  margin-top: 5px;
+.numeros .numeros-item:nth-child(3n+2) {
+  border-left: 2px solid #EEEFF2;
+  border-right: 2px solid #EEEFF2;
 }
 
-.banner2 {
+.recursos {
   gap: 170px;
-  margin-top: 50px;
+  margin: 50px auto 120px auto;
   align-items: flex-end;
 }
-.banner2 figure {
+.recursos figure {
   flex: 1;
 }
-.banner2 article {
+.recursos article {
   flex: 1;
-  padding-right: 170px;
+  padding: 0 85px;
 }
-.banner2 article .fs-16 {
+.recursos article .fs-16 {
   padding: 20px 0;
 }
-.banner2 article .fs-14 .flex {
+.recursos article .fs-14 .flex {
   justify-content: flex-start;
   gap: 10px;
   margin-top: 12px;
 }
 
-.cards {
-  margin: 100px 0;
+.planos {
+  padding: 80px 0;
   background-image: linear-gradient(to top, rgba(248, 248, 248, 0), #F8F8F8);
 }
-.cards .flex-c {
+.planos .flex-c {
   text-align: center;
 }
-.cards .flex-c .fs-16 {
-  padding: 15px 320px 60px;
+.planos .flex-c .fs-16 {
+  padding: 0 320px 60px;
   color: #0B132A;
 }
-.cards .flex {
+.planos .flex {
   align-items: stretch;
   gap: 50px;
+  padding: 0 50px;
 }
-.cards .flex .cards-quadro {
+.planos .flex .planos-quadro {
   border: 2px solid #ddd;
   border-radius: 10px;
   background-color: #ffffff;
-  transition: all 0.2s;
+  transition: all 0.2s ease-in-out;
   padding: 80px 70px 50px 70px;
   min-width: 330px;
 }
-.cards .flex .cards-quadro:hover {
+.planos .flex .planos-quadro:hover {
   border-color: #F53838;
+  transform: translateY(-5px);
+  box-shadow: 1px 14px 20px rgba(245, 56, 56, 0.2196078431);
 }
-.cards .flex .cards-quadro .fs-18 {
+.planos .flex .planos-quadro .fs-18 {
   margin: 30px 0;
   color: #0B132A;
 }
-.cards .flex .cards-quadro .fs-14 {
+.planos .flex .planos-quadro .fs-14 {
+  margin-bottom: 45px;
+}
+.planos .flex .planos-quadro .fs-14 .check {
+  margin: 10px 0;
   position: relative;
-  margin: 0 0 45px 32px;
+  padding-left: 30px;
   text-align: left;
 }
-.cards .flex .cards-quadro .fs-14 .check {
-  margin: 10px 0;
-}
-.cards .flex .cards-quadro .fs-14 .check::after {
-  content: url(../../assets/images/section4/check.png);
+.planos .flex .planos-quadro .fs-14 .check::before {
+  content: url(../images/section4/check.png);
   position: absolute;
-  left: -40px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-45%);
 }
-.cards .flex .cards-quadro .fs-25 {
+.planos .flex .planos-quadro .fs-25 {
   font-weight: 500;
+  color: #0B132A;
 }
-.cards .flex .cards-quadro .fs-25 span {
+.planos .flex .planos-quadro .fs-25 span {
   font-weight: 400;
+  color: #4F5665;
 }
-.cards .flex-c {
+.planos .flex-c {
   gap: 20px;
   justify-content: space-between;
 }
@@ -250,13 +266,16 @@ header nav .login:hover {
   text-align: center;
 }
 .maps article .fs-35 {
-  padding: 50px 375px 0px 375px;
+  padding: 70px 410px 0px 410px;
 }
 .maps article .fs-16 {
   padding: 20px 340px 155px 340px;
 }
 .maps article strong {
   font-weight: 500;
+}
+.maps article img {
+  width: 100%;
 }
 .maps img {
   max-width: 100%;
@@ -266,7 +285,7 @@ header nav .login:hover {
 }
 
 .testemunhal {
-  margin-bottom: 300px;
+  padding-bottom: 135px;
 }
 .testemunhal article {
   text-align: center;
@@ -275,7 +294,7 @@ header nav .login:hover {
   padding: 50px 375px 0px 375px;
 }
 .testemunhal article .texto {
-  padding: 20px 340px 155px 340px;
+  padding: 20px 340px 60px 340px;
 }
 .testemunhal .cards-scrool {
   gap: 50px;
@@ -300,6 +319,9 @@ header nav .login:hover {
 .testemunhal .cards-scrool .testemunhal-card .card-titulo .flex {
   gap: 20px;
 }
+.testemunhal .cards-scrool .testemunhal-card .card-titulo .flex .fs-14 {
+  line-height: 23px;
+}
 .testemunhal .cards-scrool .testemunhal-card .card-titulo .nota::after {
   content: url(../../assets/images/section6/estrela.png);
   padding-left: 8px;
@@ -309,27 +331,27 @@ header nav .login:hover {
   margin-top: 10px;
 }
 
-.newsletter {
-  width: 1140px;
-  background-color: green;
-  margin: 0 auto;
-  padding: 58px 70px;
+main .newsletter {
+  background-color: #ffffff;
+  padding: 60px 70px;
   border-radius: 10px;
   position: relative;
+  margin-bottom: -120px;
 }
-.newsletter article {
-  padding-right: 10;
+main .newsletter .fs-35 {
+  line-height: 45px;
 }
-.newsletter button {
+main .newsletter button {
   padding: 18px 65px;
+}
+main .newsletter button::before {
+  top: -70%;
+  z-index: 1;
 }
 
 footer {
   background-color: #F8F8F8;
   padding: 180px 0 100px 0;
-}
-footer article {
-  align-items: flex-start;
 }
 footer article .redes-sociais {
   flex: 2;
@@ -349,7 +371,14 @@ footer article .redes-sociais .mr span {
 footer article nav {
   flex: 1;
 }
+footer article nav .fs-18 {
+  margin-bottom: 20px;
+}
 footer article nav a {
   font-size: 16px;
   color: #4F5665;
+  padding: 10px 0;
+}
+footer .flex {
+  align-items: flex-start;
 }/*# sourceMappingURL=style.css.map */
