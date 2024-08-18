@@ -2,13 +2,14 @@ main {
 
     .newsletter {
         background-color: $white;
-        padding: 60px 70px;
+        padding: 68px 70px;
         border-radius: 10px;
         position: relative;
         margin-bottom: -120px;
 
         .fs-35 {
             line-height: 45px;
+            padding-bottom: 10px;
         }
 
         button {

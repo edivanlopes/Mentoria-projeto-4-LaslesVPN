@@ -347,13 +347,14 @@ header nav .botao-p {
 
 main .newsletter {
   background-color: #ffffff;
-  padding: 60px 70px;
+  padding: 68px 70px;
   border-radius: 10px;
   position: relative;
   margin-bottom: -120px;
 }
 main .newsletter .fs-35 {
   line-height: 45px;
+  padding-bottom: 10px;
 }
 main .newsletter button {
   padding: 18px 65px;
