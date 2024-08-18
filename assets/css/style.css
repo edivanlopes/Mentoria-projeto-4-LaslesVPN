@@ -70,7 +70,7 @@ body {
   border: 2px solid #F53838;
   border-radius: 50px;
   font-size: 16px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 .botao-p:active {
   transform: translateY(2px);
@@ -80,7 +80,7 @@ body {
   background-color: #F53838;
   box-shadow: 0px 14px 52px rgba(244, 59, 61, 0.4);
   color: #ffffff;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .botao-g {
@@ -90,7 +90,7 @@ body {
   color: #F53838;
   border-radius: 10px;
   line-height: 25px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 .botao-g:active {
   transform: translateY(2px);
@@ -220,9 +220,9 @@ header nav .botao-p {
   border: 2px solid #ddd;
   border-radius: 10px;
   background-color: #ffffff;
-  transition: all 0.2s ease-in-out;
   padding: 80px 70px 50px 70px;
   min-width: 330px;
+  transition: all 0.25s ease-in-out;
 }
 .planos .flex .planos-quadro:hover {
   border-color: #F53838;
@@ -302,21 +302,33 @@ header nav .botao-p {
   gap: 50px;
   align-items: stretch;
   overflow: auto;
-  padding-bottom: 20px;
+  padding: 10px 0 20px;
+}
+.testemunhal .cards-scrool::-webkit-scrollbar {
+  background-color: rgba(245, 56, 56, 0.1294117647);
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+}
+.testemunhal .cards-scrool::-webkit-scrollbar-thumb {
+  background-color: #F53838;
+  border-radius: 50px;
 }
 .testemunhal .cards-scrool .testemunhal-card {
   border: 2px solid #ddd;
   border-radius: 10px;
-  transition: all 0.3s;
   flex: 1;
   padding: 30px;
   text-align: left;
   width: 400px;
   min-width: 400px;
   height: 230px;
+  transition: all 0.25s ease-in-out;
 }
 .testemunhal .cards-scrool .testemunhal-card:hover {
   border-color: #F53838;
+  transform: translateY(-5px);
+  box-shadow: 1px 14px 20px rgba(245, 56, 56, 0.2196078431);
 }
 .testemunhal .cards-scrool .testemunhal-card .card-titulo .flex {
   gap: 20px;

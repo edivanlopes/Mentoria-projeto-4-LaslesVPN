@@ -17,21 +17,34 @@
         gap: 50px;
         align-items: stretch;
         overflow: auto;
-        padding-bottom: 20px;
+        padding: 10px 0 20px;
+
+        &::-webkit-scrollbar {
+            background-color: #f5383821;
+            width: 15px;
+            height: 15px;
+            border-radius: 50px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $cor-hover-btn;
+            border-radius: 50px;
+        }
 
         .testemunhal-card {
             border: 2px solid $cor-borda;
             border-radius: 10px;
-            transition: all .3s;
             flex: 1;
             padding: 30px;
             text-align: left;
             width: 400px;
             min-width: 400px;
             height: 230px;
+            transition: all .25s ease-in-out;
     
             &:hover {
                 border-color: $cor-hover-btn;
+                transform: translateY(-5px);
+                box-shadow: 1px 14px 20px #f5383838;
             }
 
             .card-titulo {

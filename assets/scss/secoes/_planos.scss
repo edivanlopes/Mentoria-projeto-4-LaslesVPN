@@ -20,9 +20,9 @@
             border: 2px solid $cor-borda;
             border-radius: 10px;
             background-color: $white;
-            transition: all .2s ease-in-out;
             padding: 80px 70px 50px 70px;
             min-width: 330px;
+            transition: all .25s ease-in-out;
 
             &:hover {
                 border-color: $cor-hover-btn;
