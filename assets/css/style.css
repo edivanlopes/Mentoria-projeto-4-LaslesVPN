@@ -282,6 +282,8 @@ header nav .botao-p {
 }
 .maps .flex {
   margin: 50px 0;
+  flex-wrap: wrap;
+  gap: 60px;
 }
 
 .testemunhal {
