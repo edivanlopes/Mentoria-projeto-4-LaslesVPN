@@ -366,10 +366,7 @@ main .newsletter button::before {
 
 footer {
   background-color: #F8F8F8;
-  padding: 180px 0 100px 0;
-}
-footer article .redes-sociais {
-  flex: 2;
+  padding: 200px 0 100px 0;
 }
 footer article .redes-sociais .texto {
   margin: 20px 0 30px;
@@ -383,17 +380,21 @@ footer article .redes-sociais .mr {
 footer article .redes-sociais .mr span {
   font-weight: 500;
 }
-footer article nav {
-  flex: 1;
+footer article .nav-links {
+  gap: 130px;
+  align-items: flex-start;
 }
-footer article nav .fs-18 {
+footer article .nav-links .fs-18 {
   margin-bottom: 20px;
 }
-footer article nav a {
+footer article .nav-links li {
+  padding: 5px;
+}
+footer article .nav-links li a {
   font-size: 16px;
   color: #4F5665;
-  padding: 10px 0;
+  padding: 20px 0;
 }
-footer .flex {
-  align-items: flex-start;
+footer article .nav-links li a:hover {
+  color: #F53838;
 }/*# sourceMappingURL=style.css.map */
