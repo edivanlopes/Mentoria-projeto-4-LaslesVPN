@@ -274,16 +274,21 @@ header nav .botao-p {
 .maps article strong {
   font-weight: 500;
 }
-.maps article img {
-  width: 100%;
-}
-.maps img {
+.maps article figure img {
   max-width: 100%;
+  width: 100%;
 }
 .maps .flex {
   margin: 50px 0;
   flex-wrap: wrap;
   gap: 60px;
+}
+.maps .flex img {
+  transition: all 0.25s ease-in-out;
+  max-width: 100%;
+}
+.maps .flex img:hover {
+  transform: scale(1.2);
 }
 
 .testemunhal {
