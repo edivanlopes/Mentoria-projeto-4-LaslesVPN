@@ -1,4 +1,9 @@
 .maps {
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+    
     article {
         text-align: center;
 

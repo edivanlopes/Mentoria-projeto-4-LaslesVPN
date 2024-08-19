@@ -1,5 +1,10 @@
 .numeros {
     padding: 37px 30px;
+
+    @media (max-width: 600px) {
+        margin-bottom: 100px;
+        padding: 0 10%;
+    }
    
     .numeros-item {
         gap: 37px;
@@ -7,6 +12,12 @@
         padding: 30px;
         justify-content: center;
         transition: all .3s;
+
+        @media (max-width: 600px) {
+            flex-direction: row;
+            padding: 15%;
+            justify-content: flex-start;
+        }
 
         &:hover {
             transform: scale(1.01);
@@ -20,6 +31,13 @@
         &:nth-child(3n + 2) {
             border-left: 2px solid $cor-borda-numeros;
             border-right: 2px solid $cor-borda-numeros;
+
+            @media (max-width: 600px) {
+                border-left: none;
+                border-right: none;
+                border-top: 2px solid $cor-borda-numeros;
+                border-bottom: 2px solid $cor-borda-numeros;
+            }
         }   
     }
 }

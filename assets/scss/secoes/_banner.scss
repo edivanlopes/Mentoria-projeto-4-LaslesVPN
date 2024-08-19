@@ -2,6 +2,11 @@
     gap: 40px;
     padding: 200px 0 100px 0;
 
+    @media (max-width: 600px) {
+        gap: 50px;
+        padding: 150px 0 80px 0;
+    }
+
     article {
         flex: 1;
         
@@ -15,14 +20,15 @@
     
         .texto {
             line-height: 30px;
-            padding-bottom: 50px;
 
             strong {
                 font-weight: 500;
             }
         }
-        .botao {
+        
+        .botao-g {
             margin-top: 50px;
+            width: max-content;
         }
     }
 

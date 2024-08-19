@@ -2,25 +2,45 @@ $font-1:"Rubik", sans-serif;
 
 .fs-14 {
     font-size: 14px;
+
+    @media (max-width: 600px) {    
+        font-size: 12px;
+    }
 }
 
 .fs-16 {
     font-size: 16px;
-}
 
-.fs-20 {
-    font-size: 20px;
+    @media (max-width: 600px) {    
+        font-size: 14px;
+    }
 }
 
 .fs-18 {
     font-size: 18px;
     font-weight: 500;
     color: $cor-titulo;
+
+    @media (max-width: 600px) {    
+        font-size: 16px;
+    }
+}
+
+.fs-20 {
+    font-size: 20px;
+
+    @media (max-width: 600px) {    
+        font-size: 18px;
+    }
 }
 
 .fs-25 {
     font-size: 25px;
     font-weight: 700;
+
+    @media (max-width: 600px) {    
+        font-size: 22px;
+    }
 }
 
 .fs-35 {
@@ -28,6 +48,11 @@ $font-1:"Rubik", sans-serif;
     font-weight: 500;
     color: $cor-titulo;
     line-height: 50px;
+
+    @media (max-width: 600px) {    
+        font-size: 28px;
+        line-height: 40px;
+    }
 }
 
 .fs-50 {
@@ -35,4 +60,9 @@ $font-1:"Rubik", sans-serif;
     font-weight: 500;
     line-height: 70px;
     color: $cor-titulo;
+
+    @media (max-width: 600px) {    
+        font-size: 42px;
+        line-height: 55px;
+    }
 }

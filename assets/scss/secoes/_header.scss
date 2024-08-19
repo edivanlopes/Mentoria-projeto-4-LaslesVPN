@@ -8,7 +8,12 @@ header {
     
     nav {
         padding: 25px 0;
-        
+
+        @media (max-width: 600px) {
+            padding: 15px 0 5px;
+            align-items: center
+        }
+     
         .fs-16 {
             padding: 30px 25px;
             transition: all .2s;
@@ -31,5 +36,25 @@ header {
             font-weight: 500;
             border: 1px solid $cor-hover-btn;
         }
+
+        .cabecalho-mobile {
+            display: none;
+        }
     }
+
+    @media (max-width: 600px) {
+        nav {
+            flex-direction: row !important; 
+            justify-content: space-between;
+             
+            .cabecalho-mobile {
+                display: block;
+            }
+
+            .cabecalho-descktop {
+                display: none;
+            } 
+        }
+    }   
 }
+

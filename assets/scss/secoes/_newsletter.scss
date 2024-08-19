@@ -1,24 +1,26 @@
-main {
+.newsletter {
+    background-color: $white;
+    padding: 58px 70px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: -117px;
+    height: 233px;
 
-    .newsletter {
-        background-color: $white;
-        padding: 68px 70px;
-        border-radius: 10px;
-        position: relative;
-        margin-bottom: -120px;
+    @media (max-width: 600px) {
+        padding: 20px;
+        margin-bottom: -150px;
+        height: 300px;
+    }
 
-        .fs-35 {
-            line-height: 45px;
-            padding-bottom: 10px;
-        }
+    .fs-35 {
+        padding-bottom: 10px;
+    }
 
-        button {
-            padding: 18px 65px;
-            
-            &::before {
-                top: -70%;
-                z-index: +1;
-            }
+    .botao-g {
+        padding: 18px 65px;
+
+        @media (max-width: 600px) {
+            padding: 13px 40px;
         }
     }
 }

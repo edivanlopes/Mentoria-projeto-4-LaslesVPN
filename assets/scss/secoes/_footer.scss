@@ -2,9 +2,26 @@ footer {
     background-color: $cor-footer;
     padding: 200px 0 100px 0;
 
+    @media (max-width: 600px) {
+        padding: 200px 0 5px;
+    }
+
+    .mr-mobile {
+        display: block;
+    }
+
+    .mr-mobile {
+        margin-top: 50px;
+        align-self: center;
+    }
+
     article {  
 
         .redes-sociais {
+
+            @media (max-width: 600px) {
+                margin-top: 60px;
+            }
     
             .texto {
                 margin: 20px 0 30px ;
@@ -20,6 +37,10 @@ footer {
                 span {
                     font-weight: 500;
                 }
+
+                @media (max-width: 600px) {
+                    display: none;
+                }
             }
         }
 
@@ -27,8 +48,17 @@ footer {
             gap: 130px;
             align-items: flex-start;
 
+            @media (max-width: 600px) {
+                gap: 60px;
+                margin-top: 30px;
+            }
+
             .fs-18 {
                 margin-bottom: 20px;
+
+                @media (max-width: 600px) {
+                    margin-bottom: 10px;
+                }
             }
 
             li {
