@@ -1,5 +1,5 @@
 .numeros {
-    padding: 37px 30px;
+    padding: 37px 0;
 
     @media (max-width: 600px) {
         margin-bottom: 100px;
@@ -29,11 +29,6 @@
             flex-direction: row;
             gap: 10%;
             padding: 5% 0;
-        }
-
-        &:hover {
-            transform: scale(1.01);
-            box-shadow: 0px 12px 50px 3px rgba(204, 204, 204, 0.1411764706);
         }
     
             span {
