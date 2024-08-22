@@ -9,15 +9,15 @@ footer {
             display: block;
             margin-top: 50px;
         }
+
+        @media (max-width: 600px) {
+            display: block;
+            margin-top: 50px;
+        }
     }
 
     @media (max-width: 600px) {
         padding: 200px 0 90px;
-
-        .mr-mobile {
-            display: block;
-            margin-top: 50px;
-        }
     }
 
     article {  

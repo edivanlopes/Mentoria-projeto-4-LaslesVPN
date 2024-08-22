@@ -980,12 +980,14 @@ footer .mr-mobile {
   }
 }
 @media (max-width: 600px) {
-  footer {
-    padding: 200px 0 90px;
-  }
   footer .mr-mobile {
     display: block;
     margin-top: 50px;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    padding: 200px 0 90px;
   }
 }
 @media (max-width: 900px) and (min-width: 600px) {
