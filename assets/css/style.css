@@ -212,6 +212,7 @@ body {
   border-radius: 50px;
   font-size: 16px;
   transition: all 0.25s ease-in-out;
+  cursor: pointer;
 }
 .botao-p:active {
   transform: translateY(2px);
@@ -232,6 +233,10 @@ body {
   border-radius: 10px;
   line-height: 25px;
   transition: all 0.25s ease-in-out;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  cursor: pointer;
 }
 .botao-g:active {
   transform: translateY(2px);
@@ -239,13 +244,14 @@ body {
 @media (max-width: 600px) {
   .botao-g {
     padding: 13px 50px;
-    align-self: flex-end;
+    width: 100%;
   }
 }
 @media (max-width: 900px) and (min-width: 600px) {
   .botao-g {
     padding: 13px 50px;
-    align-self: flex-end;
+    width: 100%;
+    max-width: 600px;
   }
 }
 @media (max-width: 1210px) and (min-width: 900px) {
@@ -301,6 +307,7 @@ header nav .sign-in {
   font-weight: 500;
   color: #0B132A;
   border-radius: 50px;
+  transition: all 0.25s ease-in-out;
 }
 @media (max-width: 1210px) and (min-width: 900px) {
   header nav .sign-in {
@@ -356,7 +363,7 @@ header nav .cabecalho-mobile {
 }
 @media (max-width: 600px) {
   .banner {
-    gap: 50px;
+    gap: 90px;
     padding: 150px 0 80px 0;
   }
 }
@@ -383,6 +390,11 @@ header nav .cabecalho-mobile {
 .banner article .fs-50 {
   margin-bottom: 20px;
 }
+@media (max-width: 900px) and (min-width: 600px) {
+  .banner article .fs-50 {
+    max-width: 600px;
+  }
+}
 .banner article .fs-50 strong {
   font-weight: 700;
 }
@@ -392,10 +404,13 @@ header nav .cabecalho-mobile {
 .banner article .texto strong {
   font-weight: 500;
 }
+@media (max-width: 900px) and (min-width: 600px) {
+  .banner article .texto {
+    max-width: 500px;
+  }
+}
 .banner article .botao-g {
   margin-top: 50px;
-  width: -moz-max-content;
-  width: max-content;
 }
 .banner figure {
   flex: 1;
@@ -403,6 +418,7 @@ header nav .cabecalho-mobile {
 @media (max-width: 900px) and (min-width: 600px) {
   .banner figure {
     align-self: center;
+    margin-top: 40px;
   }
 }
 .banner figure img {
@@ -410,7 +426,7 @@ header nav .cabecalho-mobile {
 }
 
 .numeros {
-  padding: 37px 30px;
+  padding: 37px 0;
 }
 @media (max-width: 600px) {
   .numeros {
@@ -445,10 +461,6 @@ header nav .cabecalho-mobile {
     gap: 10%;
     padding: 5% 0;
   }
-}
-.numeros .numeros-item:hover {
-  transform: scale(1.01);
-  box-shadow: 0px 12px 50px 3px rgba(204, 204, 204, 0.1411764706);
 }
 .numeros .numeros-item span {
   color: #0B132A;
@@ -574,6 +586,7 @@ header nav .cabecalho-mobile {
     flex-direction: row;
     overflow: auto;
     padding: 0;
+    gap: 3vw;
   }
   .planos .flex::-webkit-scrollbar {
     background-color: rgba(245, 56, 56, 0.1294117647);
@@ -590,7 +603,8 @@ header nav .cabecalho-mobile {
   .planos .flex {
     flex-direction: row;
     overflow: auto;
-    padding: 30px;
+    padding: 20px;
+    gap: 5vw;
   }
   .planos .flex::-webkit-scrollbar {
     background-color: rgba(245, 56, 56, 0.1294117647);
@@ -612,7 +626,7 @@ header nav .cabecalho-mobile {
   .planos .flex::-webkit-scrollbar {
     background-color: rgba(245, 56, 56, 0.1294117647);
     width: 15px;
-    height: 15px;
+    height: 12px;
     border-radius: 50px;
   }
   .planos .flex::-webkit-scrollbar-thumb {
@@ -630,10 +644,16 @@ header nav .cabecalho-mobile {
 }
 @media (max-width: 600px) {
   .planos .flex .planos-quadro {
-    padding: 20px;
-    width: 350px;
-    min-width: 250px;
-    margin: 30px 0;
+    padding: 20px 30px;
+    width: 80vw;
+    margin: 15px 5px;
+    min-width: 300px;
+  }
+}
+@media (max-width: 900px) and (min-width: 600px) {
+  .planos .flex .planos-quadro {
+    padding: 30px 50px;
+    min-width: 300px;
   }
 }
 .planos .flex .planos-quadro:hover {
@@ -799,12 +819,18 @@ header nav .cabecalho-mobile {
 @media (max-width: 600px) {
   .testemunhal .cards-scrool {
     flex-direction: row;
+    gap: 20px;
   }
 }
 @media (max-width: 900px) and (min-width: 600px) {
   .testemunhal .cards-scrool {
     flex-direction: row;
-    gap: 20px;
+    gap: 25px;
+  }
+}
+@media (max-width: 1210px) and (min-width: 900px) {
+  .testemunhal .cards-scrool {
+    gap: 35px;
   }
 }
 .testemunhal .cards-scrool::-webkit-scrollbar {
@@ -812,6 +838,21 @@ header nav .cabecalho-mobile {
   width: 15px;
   height: 15px;
   border-radius: 50px;
+}
+@media (max-width: 600px) {
+  .testemunhal .cards-scrool::-webkit-scrollbar {
+    height: 2px;
+  }
+}
+@media (max-width: 900px) and (min-width: 600px) {
+  .testemunhal .cards-scrool::-webkit-scrollbar {
+    height: 2px;
+  }
+}
+@media (max-width: 1210px) and (min-width: 900px) {
+  .testemunhal .cards-scrool::-webkit-scrollbar {
+    height: 12px;
+  }
 }
 .testemunhal .cards-scrool::-webkit-scrollbar-thumb {
   background-color: #F53838;
@@ -833,6 +874,7 @@ header nav .cabecalho-mobile {
     width: 350px;
     min-width: 300px;
     height: auto;
+    padding: 20px;
   }
 }
 @media (max-width: 900px) and (min-width: 600px) {
@@ -888,22 +930,22 @@ header nav .cabecalho-mobile {
 @media (max-width: 600px) {
   .newsletter {
     padding: 20px;
-    margin-bottom: -150px;
-    height: 300px;
+    margin-bottom: -125px;
+    height: 250px;
   }
 }
 @media (max-width: 900px) and (min-width: 600px) {
   .newsletter {
     padding: 25px;
     margin-bottom: -125px;
-    height: 250px;
+    height: 290px;
   }
 }
 @media (max-width: 1210px) and (min-width: 900px) {
   .newsletter {
     padding: 40px;
-    margin-bottom: -117px;
-    height: 233px;
+    margin-bottom: -145px;
+    height: 250px;
     text-align: center;
   }
 }
@@ -920,7 +962,7 @@ header nav .cabecalho-mobile {
 }
 @media (max-width: 1210px) and (min-width: 900px) {
   .newsletter .botao-g {
-    align-self: flex-end;
+    align-self: center;
   }
 }
 
@@ -931,14 +973,24 @@ footer {
 footer .mr-mobile {
   display: none;
 }
+@media (max-width: 900px) and (min-width: 600px) {
+  footer .mr-mobile {
+    display: block;
+    margin-top: 50px;
+  }
+}
 @media (max-width: 600px) {
   footer {
-    padding: 200px 0 5px;
+    padding: 200px 0 90px;
   }
   footer .mr-mobile {
     display: block;
     margin-top: 50px;
-    align-self: center;
+  }
+}
+@media (max-width: 900px) and (min-width: 600px) {
+  footer article {
+    gap: 30px;
   }
 }
 @media (max-width: 600px) {
@@ -968,6 +1020,11 @@ footer article .redes-sociais .mr span {
     display: none;
   }
 }
+@media (max-width: 1210px) and (min-width: 900px) {
+  footer article .redes-sociais .mr {
+    margin-top: 22px;
+  }
+}
 footer article .nav-links {
   gap: 130px;
   align-items: flex-start;
@@ -982,7 +1039,13 @@ footer article .nav-links {
   footer article .nav-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media (max-width: 1210px) and (min-width: 900px) {
+  footer article .nav-links {
+    gap: 60px;
   }
 }
 footer article .nav-links .fs-18 {
