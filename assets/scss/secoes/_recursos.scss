@@ -1,10 +1,21 @@
 .recursos {
     gap: 170px;
-    margin: 50px auto 120px auto;
-    align-items: flex-end;
+    margin: 150px auto 120px auto;
 
     @media (max-width: 600px) {
         gap: 70px;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        margin: 100px auto 80px auto;
+    }
+
+    @media (max-width: 900px) and (min-width: 600px) {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    @media (max-width: 1210px) and (min-width: 900px) {    
+        gap: 40px;
     }
     
     figure {
@@ -13,6 +24,10 @@
         img {
             max-width: 100%;
         }
+
+        @media (max-width: 900px) and (min-width: 600px) {
+            align-self: center;
+        }
     }
 
     article {
@@ -20,6 +35,14 @@
         padding: 0 85px;
 
         @media (max-width: 600px) {
+            padding: 0;
+        }
+
+        @media (max-width: 900px) and (min-width: 600px) {
+            padding: 0;
+        }
+
+        @media (max-width: 1210px) and (min-width: 900px) {    
             padding: 0;
         }
 
@@ -35,6 +58,10 @@
                 margin-top: 12px;
 
                 @media (max-width: 600px) {
+                    flex-direction: row;
+                }
+
+                @media (max-width: 900px) and (min-width: 600px) {
                     flex-direction: row;
                 }
             }

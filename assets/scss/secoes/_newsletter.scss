@@ -12,6 +12,19 @@
         height: 300px;
     }
 
+    @media (max-width: 900px) and (min-width: 600px) {
+        padding: 25px;
+        margin-bottom: -125px;
+        height: 250px;
+    }
+
+    @media (max-width: 1210px) and (min-width: 900px) {    
+        padding: 40px;
+        margin-bottom: -117px;
+        height: 233px;
+        text-align: center;
+    }
+
     .fs-35 {
         padding-bottom: 10px;
     }
@@ -21,6 +34,10 @@
 
         @media (max-width: 600px) {
             padding: 13px 40px;
+        }
+
+        @media (max-width: 1210px) and (min-width: 900px) {    
+            align-self: flex-end;
         }
     }
 }

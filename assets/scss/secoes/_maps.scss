@@ -3,35 +3,61 @@
     @media (max-width: 600px) {
         display: none;
     }
-    
+
     article {
         text-align: center;
 
         .fs-35 {
             padding: 70px 410px 0px 410px;
+
+            @media (max-width: 900px) and (min-width: 600px) {
+                padding: 10px 0;
+            }
+
+            @media (max-width: 1210px) and (min-width: 900px) {    
+                padding: 20px 0;
+            }
         }
 
         .fs-16 {
             padding: 20px 340px 155px 340px;
-        }
 
-        strong {
-        font-weight: 500;
-        }
-
-        figure {
-            
-            img {
-                max-width: 100%;
-                width: 100%;
+            strong {
+                font-weight: 500;
             }
+
+            @media (max-width: 900px) and (min-width: 600px) {
+                padding: 0 0 60px;
+            }
+
+            @media (max-width: 1210px) and (min-width: 900px) {    
+                padding: 0 0 80px;
+            } 
         }
+    }
+
+    figure img {
+        max-width: 100%;
     }
 
     .flex {
         margin: 50px 0;
         flex-wrap: wrap;
         gap: 60px;
+
+        @media (max-width: 900px) and (min-width: 600px) {
+            gap: 5px;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        @media (max-width: 1210px) and (min-width: 900px) {    
+            gap: 30px;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
 
         img {
             transition: all .25s ease-in-out;
