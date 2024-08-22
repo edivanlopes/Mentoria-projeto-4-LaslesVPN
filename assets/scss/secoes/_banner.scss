@@ -3,7 +3,7 @@
     padding: 200px 0 100px 0;
 
     @media (max-width: 600px) {
-        gap: 50px;
+        gap: 90px;
         padding: 150px 0 80px 0;
     }
 
@@ -26,6 +26,10 @@
         
         .fs-50 {
             margin-bottom: 20px;
+
+            @media (max-width: 900px) and (min-width: 600px) {
+                max-width: 600px;
+            }
     
             strong {
                 font-weight: 700;
@@ -38,11 +42,14 @@
             strong {
                 font-weight: 500;
             }
+
+            @media (max-width: 900px) and (min-width: 600px) {
+                max-width: 500px;
+            }
         }
         
         .botao-g {
             margin-top: 50px;
-            width: max-content;
         }
     }
 
@@ -51,6 +58,7 @@
 
         @media (max-width: 900px) and (min-width: 600px) {
             align-self: center;
+            margin-top: 40px;
         } 
 
         img {
