@@ -1,6 +1,7 @@
 .recursos {
     gap: 170px;
     margin: 150px auto 120px auto;
+    scroll-margin-top: 210px;
 
     @media (max-width: 600px) {
         gap: 70px;

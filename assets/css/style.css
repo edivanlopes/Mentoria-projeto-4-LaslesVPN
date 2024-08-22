@@ -481,6 +481,7 @@ header nav .cabecalho-mobile {
 .recursos {
   gap: 170px;
   margin: 150px auto 120px auto;
+  scroll-margin-top: 210px;
 }
 @media (max-width: 600px) {
   .recursos {
@@ -553,6 +554,7 @@ header nav .cabecalho-mobile {
 .planos {
   padding: 80px 0;
   background-image: linear-gradient(to top, rgba(248, 248, 248, 0), #F8F8F8);
+  scroll-margin-top: 95px;
 }
 .planos .flex-c {
   text-align: center;
@@ -765,6 +767,7 @@ header nav .cabecalho-mobile {
 
 .testemunhal {
   padding-bottom: 135px;
+  scroll-margin-top: 130px;
 }
 @media (max-width: 900px) and (min-width: 600px) {
   .testemunhal {
