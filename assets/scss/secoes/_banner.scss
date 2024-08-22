@@ -7,8 +7,22 @@
         padding: 150px 0 80px 0;
     }
 
+    @media (max-width: 900px) and (min-width: 600px) {
+        gap: 50px;
+        padding: 150px 0 80px 0;
+    } 
+
+    @media (max-width: 1210px) and (min-width: 900px) {    
+        gap: 40px;
+        padding: 200px 0 100px 0;
+    }
+
     article {
         flex: 1;
+
+        @media (max-width: 900px) and (min-width: 600px) {
+            gap: 20px;
+        }
         
         .fs-50 {
             margin-bottom: 20px;
@@ -34,6 +48,10 @@
 
     figure {
         flex: 1;
+
+        @media (max-width: 900px) and (min-width: 600px) {
+            align-self: center;
+        } 
 
         img {
             max-width: 100%;
