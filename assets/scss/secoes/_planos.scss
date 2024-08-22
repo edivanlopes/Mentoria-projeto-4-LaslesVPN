@@ -32,6 +32,7 @@
             flex-direction: row;
             overflow: auto;
             padding: 0;
+            gap: 3vw;
 
             &::-webkit-scrollbar {
                 background-color: #f5383821;
@@ -49,7 +50,8 @@
         @media (max-width: 900px) and (min-width: 600px) {
             flex-direction: row;
             overflow: auto;
-            padding: 30px;
+            padding: 20px;
+            gap: 5vw;
 
             &::-webkit-scrollbar {
                 background-color: #f5383821;
@@ -72,7 +74,7 @@
             &::-webkit-scrollbar {
                 background-color: #f5383821;
                 width: 15px;
-                height: 15px;
+                height: 12px;
                 border-radius: 50px;
             }
 
@@ -91,10 +93,15 @@
             transition: all .25s ease-in-out;
 
             @media (max-width: 600px) {
-                padding: 20px;
-                width: 350px;
-                min-width: 250px;
-                margin: 30px 0;
+                padding: 20px 30px;
+                width: 80vw;
+                margin: 15px 5px;
+                min-width: 300px;
+            }
+
+            @media (max-width: 900px) and (min-width: 600px) {
+                padding: 30px 50px;
+                min-width: 300px;
             }
 
             &:hover {
